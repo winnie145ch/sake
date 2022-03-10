@@ -2,7 +2,7 @@ const router = require("express").Router();
 const db = require("../modules/connect-db");
 
 router.get("/", async (req, res) => {
-  const sql = "SELECT * FROM product_gift_d";
+  const sql = "SELECT * FROM product_format WHERE";
   const [rs, fields] = await db.query(sql);
   res.json(rs);
 });
