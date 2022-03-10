@@ -20,6 +20,7 @@ app.use("/api/gift_container", require("./routes/gift_container"));
 // app.use("/api/format_gift", require("./routes/format_gift"));
 
 // mark
+app.use("/api/mark", require("./routes/mark"));
 
 // res
 app.use("/api/restaurant", require("./routes/restaurant"));
