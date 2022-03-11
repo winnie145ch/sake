@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
 // guide
 app.use("/api/guide_q", require("./routes/guide_q"));
 app.use("/api/guide_a", require("./routes/guide_a"));
-// app.use("/api/product_guide", require("./routes/product_guide"));
+app.use("/api/product_guide", require("./routes/product_guide"));
 
 // gift
 app.use("/api/gift", require("./routes/gift"));

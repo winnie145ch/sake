@@ -8,7 +8,7 @@ router.get("/", async (req, res) => {
     const [rs, fields] = await db.query(sql);
     res.json(rs);
   }
-
+  const sql = `SELECT * FROM product_sake ps JOIN  product_format pf ON pf.format_id = ps.format_id`
   const [rs, fields] = await db.query(sql);
   res.json(rs);
 });
