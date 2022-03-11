@@ -11,12 +11,11 @@ app.get("/", (req, res) => {
 app.use("/api/guide_q", require("./routes/guide_q"));
 app.use("/api/guide_a", require("./routes/guide_a"));
 // app.use("/api/product_guide", require("./routes/product_guide"));
-// app.use("/api/format_guide", require("./routes/format_guide"));
 
 // gift
 app.use("/api/gift", require("./routes/gift"));
 app.use("/api/gift_container", require("./routes/gift_container"));
-// app.use("/api/product_gift", require("./routes/product_gift"));
+app.use("/api/product_gift", require("./routes/product_gift"));
 
 
 // mark
