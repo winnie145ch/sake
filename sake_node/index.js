@@ -9,7 +9,6 @@ app.get("/", (req, res) => {
 //********* router
 // guide
 app.use("/api/guide_q", require("./routes/guide_q"));
-app.use("/api/guide_a", require("./routes/guide_a"));
 app.use("/api/product_guide", require("./routes/product_guide"));
 
 // gift
@@ -22,7 +21,7 @@ app.use("/api/product_gift", require("./routes/product_gift"));
 app.use("/api/mark", require("./routes/mark"));
 
 // res
-app.use("/api/restaurant", require("./routes/restaurant"));
+// app.use("/api/restaurant", require("./routes/restaurant"));
 
 // *************notfound
 app.use((req, res) => {
