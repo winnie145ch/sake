@@ -1,8 +1,8 @@
 const router = require("express").Router();
 const db = require("../modules/connect-db");
 
-// Get all gift:http://localhost:3001/api/product_gift
-// Get kind of gift: http://localhost:3001/api/product_gift?gift=1
+// Get all gift:http://localhost:3500/api/product_gift
+// Get kind of gift: http://localhost:3500/api/product_gift?gift=1
 // 可包成禮盒的酒的資訊
 router.get("/", async (req, res) => {
   if (req.query.gift) {

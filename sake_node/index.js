@@ -16,10 +16,9 @@ app.use("/api/gift", require("./routes/gift"));
 app.use("/api/gift_container", require("./routes/gift_container"));
 app.use("/api/product_gift", require("./routes/product_gift"));
 
-
 // mark
 app.use("/api/mark", require("./routes/mark"));
-
+app.use("/api/gift_addcart", require("./routes/gift_addcart"));
 // res
 // app.use("/api/restaurant", require("./routes/restaurant"));
 

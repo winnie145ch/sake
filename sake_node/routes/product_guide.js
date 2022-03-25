@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const db = require("../modules/connect-db");
 
-// Get kind of gift: http://localhost:3001/api/product_guide
+// Get kind of gift: http://localhost:3500/api/product_guide
 // 指南推薦酒
 router.get("/", async (req, res) => {
   if (req.query.ans) {
